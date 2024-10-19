@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ddd;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #1f1f1f;
+}
+
+.navbar .logo {
+    color: #f5f5f5;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #f5b841;
+}
+
+.menu-toggle {
+    display: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('hero-image-dark.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.btn-primary {
+    background-color: #f5b841;
+    padding: 15px 30px;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #d9a531;
+}
+
+/* Section Styling */
+.section {
+    padding: 80px 0;
+    color: #ddd;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Room Cards */
+.room-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-family: 'Playfair Display', serif;
+    color: #f5b841;
+}
+
+.card-content p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.amenities {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.amenities li {
+    color: #f5b841;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #f5b841;
+    border: 1px solid #f5b841;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-secondary:hover {
+   
